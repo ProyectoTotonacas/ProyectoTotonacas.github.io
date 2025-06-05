@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cultura Totonaca</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f4e2d8, #ba8b02);
+      color: #4B2E19;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 20px 0 30px 0;
+      animation: bounce 2.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .column {
+      flex: 1 1 45%;
+      min-width: 300px;
+      box-sizing: border-box;
+    }
+    .frame {
+      background-color: rgba(255, 255, 255, 0.92);
+      border: 2px solid #8B4513;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 3px 3px 12px rgba(0,0,0,0.25);
+      animation: floatUp 4s ease-in-out infinite;
+      transition: box-shadow 0.3s ease;
+    }
+    .frame:hover {
+      box-shadow: 6px 6px 20px rgba(0,0,0,0.4);
+    }
+    @keyframes floatUp {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .marquee {
+      background-color: #f5deb3;
+      color: #8B4513;
+      padding: 12px;
+      border: 2px solid #8B4513;
+      text-align: center;
+      font-weight: bold;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      border-radius: 10px;
+    }
+    /* Imagenes representativas: solo dos imágenes, separadas y tamaño mediano */
+    .imagen-representativa {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    .imagen-representativa img {
+      width: 300px;
+      max-width: 90vw;
+      border: 3px solid #8B4513;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .imagen-representativa img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    /* Imagen alusiva museo */
+    .museum-img {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .museum-img p {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+      color: #5C3A00;
+      text-shadow: 1px 1px 2px #fff7c2;
+    }
+    .museum-img img {
+      width: 320px;
+      max-width: 90vw;
+      border: 3px solid #8B4513;
+      border-radius: 15px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .museum-img img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.55);
+    }
+    /* Hipervínculo animado 3D */
+    .zapoteca-link {
+      display: inline-block;
+      background: #FFD700;
+      color: #4B2E19;
+      padding: 14px 28px;
+      border-radius: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 40px auto;
+      text-align: center;
+      transform: perspective(600px) rotateY(0deg);
+      transition: transform 0.6s, background 0.4s;
+      box-shadow: 0 10px 14px rgba(0,0,0,0.25);
+      animation: bounce 3.2s infinite;
+      max-width: 280px;
+    }
+    .zapoteca-link:hover {
+      transform: perspective(600px) rotateY(20deg) scale(1.15);
+      background: #FFA500;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.4);
+    }
+    footer {
+      background-color: #8B4513;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      margin-top: 50px;
+      border-radius: 10px 10px 0 0;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cultura Totonaca</h1>
+
+  <div class="marquee">
+    <marquee>¡Descubre la fascinante cultura totonaca!</marquee>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <h2>Información General</h2>
+      <div class="frame">
+        <h3>Medio Natural</h3>
+        <p>Los totonacas se establecieron en zonas costeras, montañosas y selváticas, principalmente en los actuales estados de Veracruz y Puebla.</p>
+      </div>
+      <div class="frame">
+        <h3>Formas de Subsistencia</h3>
+        <p>Su economía se basaba en la agricultura, cultivando maíz, frijol, calabaza, chile y algodón. También practicaban la pesca, caza y recolección.</p>
+      </div>
+      <div class="frame">
+        <h3>Estructura Social y Política</h3>
+        <p>Los totonacas formaban una confederación de ciudades y se organizaban en tres señoríos principales: Cempoala, Papantla y Tajín.</p>
+      </div>
+      <div class="frame">
+        <h3>Economía</h3>
+        <p>Intercambiaban productos como vainilla, algodón, cerámica y obsidiana con otras culturas mesoamericanas, además de controlar rutas comerciales.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <h2>Cultura y Conocimientos</h2>
+      <div class="frame">
+        <h3>Religión, Dioses y Magia</h3>
+        <p>Eran politeístas y veneraban al Sol, la Diosa del Maíz y a "Trueno Viejo". Practicaban sacrificios humanos y rituales agrícolas.</p>
+      </div>
+      <div class="frame">
+        <h3>Conocimientos</h3>
+        <ul>
+          <li><strong>Matemáticas:</strong> Desarrollaron sistemas de numeración y calendáricos.</li>
+          <li><strong>Herbolaria:</strong> Poseían amplios conocimientos medicinales sobre plantas.</li>
+          <li><strong>Escritura:</strong> Usaban símbolos e iconografía en cerámica y arquitectura.</li>
+        </ul>
+      </div>
+      <div class="frame">
+        <h3>Enfrentamientos</h3>
+        <p>Fueron subyugados por los mexicas y obligados a pagar tributo. En 1519, se aliaron con Hernán Cortés para derrotar al Imperio Mexica.</p>
+      </div>
+      <div class="frame">
+        <h3>Imagen Representativa</h3>
+        <div class="imagen-representativa">
+          <img src="totonacas1.jpg" alt="Cultura Totonaca imagen 1" />
+          <img src="totonacas2.jpg" alt="Cultura Totonaca imagen 2" />
+        </div>
+      </div>
+
+      <div class="frame museum-img">
+        <p>Foto alusiva al museo:</p>
+        <img src="museo.jpg" alt="Foto del museo" />
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a class="zapoteca-link" href="https://zapotecas.github.io/" target="_blank" rel="noopener noreferrer">Visita la Cultura Zapoteca</a>
+  </div>
+
+  <footer>
+    <p>Más información sobre la cultura totonaca:</p>
+    <ul style="list-style:none; padding: 0; margin:0;">
+      <li><a href="https://es.wikipedia.org/wiki/Totonacas" target="_blank" rel="noopener noreferrer">Wikipedia - Totonacas</a></li>
+      <li><a href="https://www.inah.gob.mx" target="_blank" rel="noopener noreferrer">Instituto Nacional de Antropología e Historia</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
